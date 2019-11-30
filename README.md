@@ -1,6 +1,6 @@
 # dotnet playground
 
-Created on MAC OSX for .Net Core 3.0
+Created on macOS for .Net Core 3.0
 
 ## Project Delegates
 

@@ -14,7 +14,9 @@ namespace DelegatesLearnProg
           new Employee() {FirstName = "Jeffrey", LastName = "Richter", Salary = 1500}
       };
 
-      BoobleSort.Sort(employees, EmployeeSorter);
+      var sorter = new BoobleSort();
+      sorter.OnSortDone += (sender, args) => Console.WriteLine($"Sorting cycles done: {args.Count}");
+      sorter.Sort(employees, EmployeeSorter);
 
       foreach (var employee in employees)
       {

@@ -20,7 +20,6 @@ namespace DelegatesLearnProg
           T second = list[i + 1];
           if (comparer(first, second) == true)
           {
-            T temp = second;
             list[i + 1] = first;
             list[i] = second;
             swapped = true;
